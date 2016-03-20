@@ -9,8 +9,8 @@ class IndexController extends Zend_Controller_Action {
     public function indexAction() {
         // action body
         $storage = new Zend_Mail_Storage_Imap(array('host' => 'stud.prz.edu.pl',
-            'user' => '127274@stud.prz.edu.pl',
-            'password' => '16121992',
+            'user' => '',
+            'password' => '',
             'ssl' => 'SSL'));
         $i=1;
         foreach ($storage as $message) {
